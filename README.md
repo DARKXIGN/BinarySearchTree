@@ -33,17 +33,25 @@ To use BinarySearchTree.java, you must create the following two files in the sam
 This is an interface that defines the public methods for a sorted collection. The BinarySearchTree class implements this interface. It should include the following method signatures:
 
 
->public interface SortedCollection<T extends Comparable<T>> {
+public interface SortedCollection<T extends Comparable<T>> {
+
     public void insert(T data) throws NullPointerException;
+    
     public boolean contains(Comparable<T> data) throws NullPointerException;
+    
     public int size();
+    
     public boolean isEmpty();
+    
     public void clear();
 }
+
+
 2. BinaryNode.java
 This is a class that represents a single node in the tree. It should be a generic class that holds the data and references to its parent and children. A minimal implementation would include:
 
-A constructor: public BinaryNode(T data)
+A constructor: 
+public BinaryNode(T data)
 
 Instance variables for data, parent, left child, and right child.
 
